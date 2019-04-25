@@ -1,27 +1,27 @@
-# _{Application Name}_
+# _To Do List_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Program which allows user to add items to a to do list and view their to do list, 04/24/2019_
 
-#### By _**Marc Davies**_
+#### By _**Marc Davies and Jared Farkas**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Program which allows user to add items to a to do list and view their to do list_
 
 ## Setup/Installation Requirements
 
 * _Clone from GitHub_
-* _In your terminal, $mono ProjectName.exe_
+* _In your terminal, $mono Program.exe_
 
 ## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
+| Program greets user | mono Program.exe | "Welcome to the to do list" |
+| Program asks if user wants to add an item or view their to do list | "Would you like to add an item or view your to do list?"" | A, V or Q |
+| If user selects A, program asks "Please enter a to do item:" | A | "Please enter a to do item:" |
+| If user selects V, program display the to do list | V | Display to do list |
+| If user selects Q, the program quits | Q | Program quits |
 
 ## Known Bugs
 
@@ -39,4 +39,4 @@ _C#_
 
 *This software is licensed under the GPL license.*
 
-Copyright (c) 2019 **_Marc Davies_**
+Copyright (c) 2019 **_Marc Davies and Jared Farkas_**

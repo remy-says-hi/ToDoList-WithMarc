@@ -14,7 +14,7 @@ namespace ToDoList.Models
        string userInput = "";
        while(keepGoing == true)
        {
-         Console.WriteLine("Would you like to add an item or view an item? (A/V/Q)");
+         Console.WriteLine("Would you like to add an item or view your to do list? (A for Add/V for View/Q for Quit)");
          userInput = Console.ReadLine().ToUpper();
          if(userInput == "Q")
          {
