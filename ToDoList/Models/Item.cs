@@ -20,18 +20,18 @@ namespace ToDoList.Models
 
     public void SetDescription(string newDescription)
     {
-       _description = newDescription;
+      _description = newDescription;
     }
 
     public static List<Item> GetAll()
     {
-     return _instances;
+      return _instances;
     }
 
     public static void ClearAll()
     {
       _instances.Clear();
     }
-    
+
   }
 }
