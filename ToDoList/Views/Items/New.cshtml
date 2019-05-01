@@ -9,10 +9,13 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-    <h1>Welcome to the To Do List!</h1>
+      <h1>Welcome to the To Do List!</h1>
     </div>
-  <a href='/items/new' class="btn btn-dark">Add a new item</a>
-  <a href='/items' class="btn btn-dark">View to do list</a>
+    <form action="/items" method="post">
+      <label for="description">Add a new item</label>
+      <input id="description" name="description" type="text">
+      <button type="submit" class="btn btn-dark">Add</button>
+    </form>
   </div>
 </body>
 </html>

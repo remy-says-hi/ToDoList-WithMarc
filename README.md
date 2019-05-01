@@ -20,11 +20,7 @@ _Program which allows user to add items to a to do list and view their to do lis
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Program greets user | mono Program.exe | "Welcome to the to do list" |
-| Program asks if user wants to add an item or view their to do list | "Would you like to add an item or view your to do list?"" | A, V or Q |
-| If user selects A, program asks "Please enter a to do item:" | A | "Please enter a to do item:" |
-| If user selects V, program display the to do list | V | Display to do list |
-| If user selects Q, the program quits | Q | Program quits |
+| Upon launching the application, user has option to *Add a new item* or *View a to do list* | Launch application | ![Image of homepage](https://i.imgur.com/da8KI8G.png) |
 
 ## Known Bugs
 

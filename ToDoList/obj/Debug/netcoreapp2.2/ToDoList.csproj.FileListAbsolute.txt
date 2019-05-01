@@ -21,5 +21,7 @@ C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\ToDoLi
 C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\ToDoList.pdb
 C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\ToDoList.csproj.CopyComplete
 C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\CreateForm.g.cshtml.cs
 C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\Index.g.cshtml.cs
+C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\DeleteAll.g.cshtml.cs
+C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\New.g.cshtml.cs
+C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\Show.g.cshtml.cs
