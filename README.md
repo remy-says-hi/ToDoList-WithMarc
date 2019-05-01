@@ -26,8 +26,8 @@ _Program which allows user to add items to a to do list and view their to do lis
 | 3. Upon entering an item and clicking on the *Add* button, user is directed to the list of to do items | Enter to do item and click *Add* | ![Image of listscreenitem](https://i.imgur.com/LtFnxkj.png) |
 | 4. User then has option to *Add a new item*, *Clear all items* or click on an item | After clicking *Add* during step 3. | ![Image of listscreenitem](https://i.imgur.com/LtFnxkj.png) |
 | 5a. Upon clicking on *Add a new item*, user is presented with input field and an *Add* button | Click *Add a new item* | ![Image of additemscreen](https://i.imgur.com/LNIfJMp.png) |
-| 5b.| Upon clicking on *Clear all items*, user is directed to the now empty list of to do items | Click *Clear all items* | ![Image of listcleared](https://i.imgur.com/kBwqow2.png) |
-| 5c.| Upon clicking on an item, user is directed to a detailed description of the to do item | Click on an item | ![Image of itemdetails](https://i.imgur.com/xJI4NuZ.png) |
+| 5b. Upon clicking on *Clear all items*, user is directed to the now empty list of to do items | Click *Clear all items* | ![Image of listcleared](https://i.imgur.com/kBwqow2.png) |
+| 5c. Upon clicking on an item, user is directed to a detailed description of the to do item | Click on an item | ![Image of itemdetails](https://i.imgur.com/xJI4NuZ.png) |
 | 6. User then has option to *Add another item* or *View all items* | After clicking on item during step 5c. | ![Image of itemdetails](https://i.imgur.com/xJI4NuZ.png) |
 | 7a. Upon clicking on *Add another item*, user is presented with input field and an *Add* button (see 2a.) | Click *Add a new item* | ![Image of additemscreen](https://i.imgur.com/LNIfJMp.png) |
 | 7b. Upon clicking on  *View all items*, user is redirected to the list of to do items (see 2b.) | Click *View a to do list* | ![Image of listscreenitem](https://i.imgur.com/LtFnxkj.png) |
