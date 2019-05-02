@@ -35,7 +35,7 @@ _Program which allows user to add items to a to do list and view their to do lis
 
 ## Known Bugs
 
-_None as of last update_
+_When adding an item to a category, an error message will appear. The item does get added though._
 
 ## Support and contact details
 
