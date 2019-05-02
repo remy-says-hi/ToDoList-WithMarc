@@ -4,42 +4,55 @@ using System.Collections.Generic;
 
 namespace ToDoList.Controllers
 {
-  public class ItemsController : Controller
-  {
-
-    [HttpGet("/items")]
-    public ActionResult Index()
+    public class ItemsController : Controller
     {
-      List<Item> allItems = Item.GetAll();
-      return View(allItems);
-    }
 
-    [HttpGet("/items/new")]
-    public ActionResult New()
-    {
-      return View();
-    }
+        [HttpGet("/items")]
+        public ActionResult Index()
+        {
+            List<Item> allItems = Item.GetAll();
+            return View(allItems);
+        }
 
-    [HttpPost("/items")]
-    public ActionResult Create(string description)
-    {
-      Item myItem = new Item(description);
-      return RedirectToAction("Index");
-    }
+        [HttpGet("/categories/{categoryId}/items/new")]
+        public ActionResult New(int categoryId)
+        {
+            Category category = Category.Find(categoryId);
+            return View(category);
+        }
 
-    [HttpPost("/items/delete")]
-    public ActionResult DeleteAll()
-    {
-      Item.ClearAll();
-      return View();
-    }
+// There seems to be a bug with this route when adding an item
 
-    [HttpGet("/items/{id}")]
-    public ActionResult Show(int id)
-    {
-      Item item = Item.Find(id);
-      return View(item);
-    }
+        [HttpPost("/categories/{categoryId}/items")]
+        public ActionResult Create(int categoryId, string itemDescription)
+        {
+            Dictionary<string, object> model = new Dictionary<string, object>();
+            Category foundCategory = Category.Find(categoryId);
+            Item newItem = new Item(itemDescription);
+            foundCategory.AddItem(newItem);
+            List<Item> categoryItems = foundCategory.GetItems();
+            model.Add("items", categoryItems);
+            model.Add("category", foundCategory);
+            return View("Show", model);
+        }
 
-  }
+        [HttpPost("/items/delete")]
+        public ActionResult DeleteAll()
+        {
+            Item.ClearAll();
+            return View();
+        }
+
+        [HttpGet("/categories/{categoryId}/items/{itemId}")]
+        public ActionResult Show(int categoryId, int itemId)
+        {
+            Item item = Item.Find(itemId);
+            Dictionary<string, object> model = new Dictionary<string, object>();
+            Category category = Category.Find(categoryId);
+            model.Add("item", item);
+            model.Add("category", category);
+            return View(model);
+        }
+
+    }
 }

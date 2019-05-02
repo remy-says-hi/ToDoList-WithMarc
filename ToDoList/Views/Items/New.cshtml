@@ -10,11 +10,13 @@
   <div class="container">
     <div class="jumbotron">
       <h1>To Do List</h1>
+      <em>You can add a new item to the <strong>@Model.GetName()</strong> category here.</em>
     </div>
-    <form action="/items" method="post">
-      <label for="description">Add a new item</label>
-      <input id="description" name="description" type="text">
-      <button type="submit" class="btn btn-dark">Add</button>
+    <form action='/categories/@Model.GetId()/items' method='post'>
+      <input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>
+      <label for='itemDescription'>To do item:</label>
+      <input id='itemDescription' name='itemDescription' type='text'>
+      <button type='submit' class="btn btn-dark">Add item</button>
     </form>
   </div>
 </body>

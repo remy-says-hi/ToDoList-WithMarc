@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>To Do List</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='~/css/styles.css' type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>To Do List</h1>
+      <em>You can see all to do items in this category here.</em>
+    </div>
+    <ol>
+    @if (Model.Count == 0)
+    {
+      <p>No items have been added yet!</p>
+    }
+    @if(Model.Count != 0)
+    {
+      @foreach (var item in @Model["items"])
+      {
+        <li><a href="/categories/@Model["category"].GetId()/items/@item.GetId()" class="btn btn-dark">@item.GetDescription()</a></li>
+      }
+    }
+    </ol>
+    <a href="/categories/@Model["category"].GetId()/items/new" class="btn btn-dark">Add a new item</a><br><br>
+    <a href="/categories" class="btn btn-dark">Return to category list</a>
+    <a href="/" class="btn btn-dark">Return to homepage</a>
+  </div>
+</body>
+</html>

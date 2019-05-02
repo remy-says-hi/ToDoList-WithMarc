@@ -25,3 +25,6 @@ C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\
 C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\DeleteAll.g.cshtml.cs
 C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\New.g.cshtml.cs
 C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Items\Show.g.cshtml.cs
+C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Index.g.cshtml.cs
+C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Categories\New.g.cshtml.cs
+C:\Users\mimim\desktop\ToDoList.Solution\ToDoList\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Show.g.cshtml.cs

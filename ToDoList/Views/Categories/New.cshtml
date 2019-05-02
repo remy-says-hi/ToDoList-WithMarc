@@ -10,12 +10,15 @@
   <div class="container">
     <div class="jumbotron">
       <h1>To Do List</h1>
-      <em>You can find more details about the to do item here.</em>
+      <em>You can add a new category here.</em>
     </div>
-    <h3>@Model["item"].GetDescription()</h3>
-    <h3>Category: @Model["category"].GetName()</h3>
-    <a href="/categories/@Model["category"].GetId()/items/new" class="btn btn-dark">Add another item</a>
-    <a href="/categories" class="btn btn-dark">View all categories</a>
+    <form action="/categories" method="post">
+      <input id="categoryName" name="categoryName" type="text">
+      <button type="submit" class="btn btn-dark">Add new category</button>
+    </form>
+    <br>
+    <a href="/categories" class="btn btn-dark">Back to categories</a>
+    <a href="/" class="btn btn-dark">Back to homepage</a>
   </div>
 </body>
 </html>
