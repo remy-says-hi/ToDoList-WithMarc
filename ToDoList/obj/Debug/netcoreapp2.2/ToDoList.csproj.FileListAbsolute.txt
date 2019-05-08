@@ -50,7 +50,6 @@ C:/Users/mimim/desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Categories/New.g.cshtml.cs
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Categories/Show.g.cshtml.cs
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
-/Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Items/DeleteAll.g.cshtml.cs
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Items/Edit.g.cshtml.cs
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Items/Index.g.cshtml.cs
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Items/New.g.cshtml.cs
@@ -60,3 +59,4 @@ C:/Users/mimim/desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/ToDoList.Views.pdb
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/ToDoList.dll
 /Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/ToDoList.csproj.CopyComplete
+/Users/Guest/Desktop/ToDoList.Solution/ToDoList/obj/Debug/netcoreapp2.2/Razor/Views/Items/DeleteItem.g.cshtml.cs

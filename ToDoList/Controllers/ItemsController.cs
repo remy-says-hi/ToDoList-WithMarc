@@ -8,7 +8,7 @@ namespace ToDoList.Controllers
     public class ItemsController : Controller
     {
 
-        /*[HttpGet("/categories/{categoryId}/items/new")]
+        [HttpGet("/categories/{categoryId}/items/new")]
         public ActionResult New(int categoryId)
         {
             Category category = Category.Find(categoryId);
@@ -26,11 +26,17 @@ namespace ToDoList.Controllers
             return View(model);
         }
 
-        [HttpPost("/items/delete")]
-        public ActionResult DeleteAll()
+        [HttpPost("/categories/{categoryId}/items/{itemId}/delete")]
+        public ActionResult DeleteItem(int categoryId, int itemId)
         {
-            Item.ClearAll();
-            return View();
+            Item item = Item.Find(itemId);
+            item.Delete();
+            Dictionary<string, object> model = new Dictionary<string, object>();
+            Category foundCategory = Category.Find(categoryId);
+            List<Item> categoryItems = foundCategory.GetItems();
+            model.Add("items", categoryItems);
+            model.Add("category", foundCategory);
+            return View(model);
         }
 
         [HttpGet("/categories/{categoryId}/items/{itemId}/edit")]
@@ -54,7 +60,7 @@ namespace ToDoList.Controllers
             model.Add("category", category);
             model.Add("item", item);
             return View("Show", model);
-        }*/
+        }
 
     }
 
