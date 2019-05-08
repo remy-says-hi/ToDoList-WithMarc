@@ -2,7 +2,7 @@
 
 #### _Program which allows user to add items to a to do list and view their to do list, 04/24/2019_
 
-#### By _**Marc Davies and Jared Farkas**_
+#### By _**Marc Davies and Brooke Kullberg**_
 
 ## Description
 
@@ -49,4 +49,4 @@ _C#_
 
 *This software is licensed under the GPL license.*
 
-Copyright (c) 2019 **_Marc Davies and Jared Farkas_**
+Copyright (c) 2019 **_Marc Davies and Brooke Kullberg_**
