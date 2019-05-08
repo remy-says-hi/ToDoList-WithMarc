@@ -15,9 +15,9 @@
     <form action='/categories/@Model.GetId()/items' method='post'>
       <input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>
       <label for='itemDescription'>To do item:</label>
-      <input id='itemDescription' name='itemDescription' type='text'>
+      <input id='itemDescription' name='itemDescription' type='text' required>
       <label for='itemDueDate'>Enter a due date:</label>
-      <input id='itemDueDate' name='itemDueDate' type='date'>
+      <input id='itemDueDate' name='itemDueDate' type='date' required>
       <button type='submit' class="btn btn-dark">Add item</button>
     </form>
   </div>
