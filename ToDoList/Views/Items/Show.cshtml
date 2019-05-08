@@ -14,6 +14,7 @@
     </div>
     <h3>@Model["item"].GetDescription()</h3>
     <h3>Category: @Model["category"].GetName()</h3>
+    <h3>Due Date: @Model["item"].GetDueDate()</h3>
     <a href='/categories/@Model["category"].GetId()/items/@Model["item"].GetId()/edit' class="btn btn-dark">Edit this item</a>
     <a href="/categories/@Model["category"].GetId()/items/new" class="btn btn-dark">Add another item</a>
     <a href="/categories" class="btn btn-dark">View all categories</a>

@@ -42,11 +42,11 @@ namespace ToDoList.Controllers
         }
 
         [HttpPost("/categories/{categoryId}/items")]
-        public ActionResult Create(int categoryId, string itemDescription)
+        public ActionResult Create(int categoryId, string itemDescription, DateTime itemDueDate)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
             Category foundCategory = Category.Find(categoryId);
-            Item newItem = new Item(itemDescription);
+            Item newItem = new Item(itemDescription, itemDueDate);
             newItem.Save();
             foundCategory.AddItem(newItem);
             List<Item> categoryItems = foundCategory.GetItems();
