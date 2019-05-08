@@ -177,7 +177,7 @@ namespace ToDoList.Tests
         Assert.AreEqual(secondDescription, result);
     }
 
-    [TestMethod]
+    /*[TestMethod]
     public void GetCategoryId_ReturnsItemsParentCategoryId_Int()
     {
         //Arrange
@@ -189,7 +189,7 @@ namespace ToDoList.Tests
 
         //Assert
         Assert.AreEqual(newCategory.GetId(), result);
-    }
+    }*/
 
   }
 }
