@@ -10,6 +10,16 @@ _Program which allows user to add items to a to do list and view their to do lis
 
 ## Setup/Installation Requirements
 
+_To download and import the database:_
+
+* _Start MAMP and click Open WebStart page in the MAMP window._
+* _In the website you're taken to, select phpMyAdmin from the Tools dropdown._
+* _Select the Import tab._
+* _Note that it's important to make sure you're not importing to a database that already exists, so make sure that a database with the same name as the one you're importing isn't already present._
+* _Select your database file, and click Go._
+
+_To clone and launch the application:_
+
 * _Clone from GitHub_
 * _$cd ToDoList.Solution/ToDoList_
 * _$dotnet restore to install packages from the .csproj file_
