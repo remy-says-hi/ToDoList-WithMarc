@@ -22,7 +22,7 @@ namespace ToDoList.Tests
             Assert.IsInstanceOfType(indexView, typeof(ViewResult));
         }
 
-        [TestMethod]
+        /*[TestMethod]
         public void Index_HasCorrectModelType_ItemList()
         {
             //Arrange
@@ -33,9 +33,9 @@ namespace ToDoList.Tests
 
             //Assert
             Assert.IsInstanceOfType(result, typeof(List<Item>));
-        }
+        }*/
 
-        [TestMethod]
+        /*[TestMethod]
         public void Create_ReturnsCorrectActionType_RedirectToActionResult()
         {
             //Arrange
@@ -46,9 +46,9 @@ namespace ToDoList.Tests
 
             //Assert
             Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
-        }
+        }*/
 
-        [TestMethod]
+        /*[TestMethod]
         public void Create_RedirectsToCorrectAction_Index()
         {
             //Arrange
@@ -60,7 +60,7 @@ namespace ToDoList.Tests
 
             //Assert
             Assert.AreEqual(result, "Index");
-        }
+        }*/
 
     }
 }

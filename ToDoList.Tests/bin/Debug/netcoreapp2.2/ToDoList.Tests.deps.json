@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "a69c998ece440ab324506b638b5af27b6020f83e"
+    "signature": "962872ed3c6c45586520afce01c7249a89b50e6d"
   },
   "compilationOptions": {},
   "targets": {
@@ -297,6 +297,14 @@
           }
         }
       },
+      "MySqlConnector/0.53.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/MySqlConnector.dll": {
+            "assemblyVersion": "0.53.0.0",
+            "fileVersion": "0.53.0.0"
+          }
+        }
+      },
       "System.ComponentModel/4.0.1": {},
       "System.ComponentModel.EventBasedAsync/4.0.11": {},
       "System.ComponentModel.Primitives/4.1.0": {
@@ -359,6 +367,9 @@
         }
       },
       "ToDoList/1.0.0": {
+        "dependencies": {
+          "MySqlConnector": "0.53.0"
+        },
         "runtime": {
           "ToDoList.dll": {}
         }
@@ -419,6 +430,13 @@
       "sha512": "sha512-RC0EruieQM+TNh5TfRtENgqorleO4s4XRyYasFZHDapuIFfeuy0BkPu4Qc5W0HKvLKwJdbb6WoSGxFRqmUA3Lg==",
       "path": "mstest.testframework/1.3.2",
       "hashPath": "mstest.testframework.1.3.2.nupkg.sha512"
+    },
+    "MySqlConnector/0.53.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4jP7FFwcjNLoGD67jVQVUjBIPEXNZ8IW5fQEFhjoPHi+7xuJyUDXOBvBix+HrfeJy6T+Wc5NVQJwgUUuBeljNA==",
+      "path": "mysqlconnector/0.53.0",
+      "hashPath": "mysqlconnector.0.53.0.nupkg.sha512"
     },
     "System.ComponentModel/4.0.1": {
       "type": "package",

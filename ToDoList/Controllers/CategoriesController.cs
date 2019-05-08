@@ -9,7 +9,7 @@ namespace ToDoList.Controllers
     public class CategoriesController : Controller
     {
 
-        [HttpGet("/categories")]
+        /*[HttpGet("/categories")]
         public ActionResult Index()
         {
             List<Category> allCategories = Category.GetAll();
@@ -41,20 +41,19 @@ namespace ToDoList.Controllers
             return View(model);
         }
 
-        // This one creates new Items within a given Category, not new Categories:
         [HttpPost("/categories/{categoryId}/items")]
         public ActionResult Create(int categoryId, string itemDescription)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
             Category foundCategory = Category.Find(categoryId);
             Item newItem = new Item(itemDescription);
-            newItem.Save(); 
+            newItem.Save();
             foundCategory.AddItem(newItem);
             List<Item> categoryItems = foundCategory.GetItems();
             model.Add("items", categoryItems);
             model.Add("category", foundCategory);
             return View("Show", model);
-        }
+        }*/
 
     }
 

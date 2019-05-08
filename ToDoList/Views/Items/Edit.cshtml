@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>To Do List</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='~/css/styles.css' type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>To Do List</h1>
+      <em>You can edit the item @Model["item"].GetDescription() here:</em>
+    </div>
+    <form action="/categories/@Model["category"].GetId()/items/@Model["item"].GetId()" method="post">
+      <label for="newDescription">Name:</label>
+      <input type="text" name="newDescription" value="@Model["item"].GetDescription()">
+      <button type="submit" class="btn btn-dark">Edit</button>
+    </form>
+    <a href="/categories/@Model["category"].GetId()/items/@Model["item"].GetId()" class="btn btn-dark">Return to previous page</a>
+  </div>
+</body>
+</html>
