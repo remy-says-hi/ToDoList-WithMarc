@@ -23,7 +23,8 @@ namespace ToDoList.Tests
     [TestMethod]
     public void ItemConstructor_CreatesInstanceOfItem_Item()
     {
-        Item newItem = new Item("test", 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item newItem = new Item("test", itemDueDate, 1);
         Assert.AreEqual(typeof(Item), newItem.GetType());
     }
 
@@ -32,7 +33,8 @@ namespace ToDoList.Tests
     {
         //Arrange
         string description = "Walk the dog.";
-        Item newItem = new Item(description, 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item newItem = new Item(description, itemDueDate, 1);
 
         //Act
         string result = newItem.GetDescription();
@@ -46,7 +48,8 @@ namespace ToDoList.Tests
     {
         //Arrange
         string description = "Walk the dog.";
-        Item newItem = new Item(description, 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item newItem = new Item(description, itemDueDate, 1);
 
         //Act
         string updatedDescription = "Do the dishes";
@@ -76,9 +79,10 @@ namespace ToDoList.Tests
         //Arrange
         string description01 = "Walk the dog";
         string description02 = "Wash the dishes";
-        Item newItem1 = new Item(description01, 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item newItem1 = new Item(description01, itemDueDate, 1);
         newItem1.Save();
-        Item newItem2 = new Item(description02, 1);
+        Item newItem2 = new Item(description02, itemDueDate, 1);
         newItem2.Save();
         List<Item> newList = new List<Item> { newItem1, newItem2 };
 
@@ -93,7 +97,8 @@ namespace ToDoList.Tests
     public void Save_AssignsIdToObject_Id()
     {
         //Arrange
-        Item testItem = new Item("Mow the lawn", 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item testItem = new Item("Mow the lawn", itemDueDate, 1);
 
         //Act
         testItem.Save();
@@ -124,7 +129,8 @@ namespace ToDoList.Tests
     public void Find_ReturnsCorrectItemFromDatabase_Item()
     {
         //Arrange
-        Item testItem = new Item("Mow the lawn", 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item testItem = new Item("Mow the lawn", itemDueDate, 1);
         testItem.Save();
 
         //Act
@@ -138,8 +144,9 @@ namespace ToDoList.Tests
     public void Equals_ReturnsTrueIfDescriptionsAreTheSame_Item()
     {
         // Arrange, Act
-        Item firstItem = new Item("Mow the lawn", 1);
-        Item secondItem = new Item("Mow the lawn", 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item firstItem = new Item("Mow the lawn", itemDueDate, 1);
+        Item secondItem = new Item("Mow the lawn", itemDueDate, 1);
 
         // Assert
         Assert.AreEqual(firstItem, secondItem);
@@ -149,7 +156,8 @@ namespace ToDoList.Tests
     public void Save_SavesToDatabase_ItemList()
     {
         //Arrange
-        Item testItem = new Item("Mow the lawn", 1);
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
+        Item testItem = new Item("Mow the lawn", itemDueDate, 1);
 
         //Act
         testItem.Save();
@@ -164,8 +172,9 @@ namespace ToDoList.Tests
     public void Edit_UpdatesItemInDatabase_String()
     {
         //Arrange
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
         string firstDescription = "Walk the Dog";
-        Item testItem = new Item(firstDescription, 1);
+        Item testItem = new Item(firstDescription, itemDueDate, 1);
         testItem.Save();
         string secondDescription = "Mow the lawn";
 

@@ -84,11 +84,12 @@ namespace ToDoList.Tests
     public void GetItems_RetrievesAllItemsWithCategory_ItemList()
     {
         //Arrange, Act
+        DateTime itemDueDate =  new DateTime(1999, 12, 24);
         Category testCategory = new Category("Household chores");
         testCategory.Save();
-        Item firstItem = new Item("Mow the lawn", testCategory.GetId());
+        Item firstItem = new Item("Mow the lawn", itemDueDate, testCategory.GetId());
         firstItem.Save();
-        Item secondItem = new Item("Do the dishes", testCategory.GetId());
+        Item secondItem = new Item("Do the dishes", itemDueDate, testCategory.GetId());
         secondItem.Save();
         List<Item> testItemList = new List<Item> {firstItem, secondItem};
         List<Item> resultItemList = testCategory.GetItems();

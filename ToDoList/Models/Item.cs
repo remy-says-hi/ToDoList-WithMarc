@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
+using System;
 
 namespace ToDoList.Models
 {
@@ -63,9 +64,9 @@ namespace ToDoList.Models
           {
               int itemId = rdr.GetInt32(0);
               string itemDescription = rdr.GetString(1);
-              int itemCategoryId = rdr.GetInt32(2);
-              DateTime itemDueDate = rdr.GetDateTime(3);
-              Item newItem = new Item(itemDescription, itemCategoryId, itemId, itemDueDate);
+              DateTime itemDueDate = rdr.GetDateTime(2);
+              int itemCategoryId = rdr.GetInt32(3);
+              Item newItem = new Item(itemDescription, itemDueDate, itemCategoryId, itemId);
               allItems.Add(newItem);
           }
           conn.Close();
@@ -104,14 +105,15 @@ namespace ToDoList.Models
           int itemId = 0;
           string itemName = "";
           int itemCategoryId = 0;
+          DateTime itemDueDate =  new DateTime(1999, 12, 24);
           while(rdr.Read())
           {
               itemId = rdr.GetInt32(0);
               itemName = rdr.GetString(1);
-              itemCategoryId = rdr.GetInt32(2);
-              DateTime itemDueDate = rdr.GetDateTime(4);
+              itemDueDate = rdr.GetDateTime(2);
+              itemCategoryId = rdr.GetInt32(3);
           }
-          Item newItem = new Item(itemName, itemCategoryId, itemId, itemDueDate);
+          Item newItem = new Item(itemName, itemDueDate, itemCategoryId, itemId);
           conn.Close();
           if (conn != null)
           {
@@ -152,7 +154,7 @@ namespace ToDoList.Models
           categoryId.Value = this._categoryId;
           cmd.Parameters.Add(categoryId);
           MySqlParameter dueDate = new MySqlParameter();
-          dueDate.ParameterName = "@ItemDueDate";
+          dueDate.ParameterName = "@dueDate";
           dueDate.Value = this._dueDate;
           cmd.Parameters.Add(dueDate);
           cmd.ExecuteNonQuery();
